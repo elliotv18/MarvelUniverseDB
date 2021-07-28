@@ -37,11 +37,16 @@ button{
 }
 button:hover{
     color: white;
-    background-color: black;
+    background-color: rgb(105, 103, 103);
+    border: solid 1px orange;
 }
 input{
     background-color: white;
     font-size: 20px;
     margin-top: 10px;
+    text-align: center;
     border: solid 1px black;
+}
+input:hover{
+    border:solid 1px orange;
 }
