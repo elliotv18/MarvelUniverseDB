@@ -11,6 +11,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 
 class HeroController extends AbstractController
 {
@@ -38,6 +39,8 @@ class HeroController extends AbstractController
         ->add('name',TextType::class)
         ->add('pseudo',TextType::class)
         ->add('description',TextType::class)
+        ->add('isEvil', CheckboxType::class)
+        /*->add('picture', FileType::class, ['required'=> false, 'constraints' => [new File(['maxSize' => '1024k','mimeTypes' => ['application/pdf','application/x-pdf',],])]])*/
         ->add('save', SubmitType::class, ['label' => 'Créer Hero'])
             ->getForm();
         $request = Request::createFromGlobals();

@@ -1,0 +1,47 @@
+body {
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    color: grey;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    color: orange;
+    border-bottom: solid 1px orange;
+    
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.limenu{
+    padding: 20px;
+}
+li{
+
+    list-style-type: none;
+}
+h1{
+    font-size: 20px;
+}
+button{
+    color: black;
+    background-color: white;
+    border: solid 1px black;
+    font-size: 20px;
+    margin-top: 10px;
+}
+button:hover{
+    color: white;
+    background-color: black;
+}
+input{
+    background-color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    border: solid 1px black;
+}

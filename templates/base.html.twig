@@ -6,7 +6,7 @@
         {# Run `composer require symfony/webpack-encore-bundle`
            and uncomment the following Encore helpers to start using Symfony UX #}
         {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
+             <link href="{{ asset('style.css') }}" rel="stylesheet" />
         {% endblock %}
 
         {% block javascripts %}
@@ -14,6 +14,13 @@
         {% endblock %}
     </head>
     <body>
+    <ul class="menu">
+       <li class="limenu"><a href="/organisation">organisations</a></li>
+        <li class="limenu"><a href="/hero">heros</a></li>
+        <li class="limenu"><a href="/hero/create">creer un hero</a></li>
+        <li class="limenu"><a href="/organisation/create">creer une organisation</a></li>
+    </ul>
         {% block body %}{% endblock %}
     </body>
 </html>
+

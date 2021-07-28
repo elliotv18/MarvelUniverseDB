@@ -10,6 +10,16 @@
 </style>
 
 <div class="example-wrapper">
-{{form(formulaire)}}
+{{ form_start(formulaire) }}
+    <div class="row">
+        <div class="col">
+            {{ form_widget(formulaire.name, {'attr': {'placeholder': 'nom'}}) }}
+        </div>
+        <div class="col">
+            {{ form_widget(formulaire.city, {'attr': {'placeholder': 'ville'}}) }}
+        </div>
+    </div>
+    {{ form_end(formulaire) }}
 </div>
+
 {% endblock %}

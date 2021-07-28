@@ -10,8 +10,9 @@
 
 <div class="example-wrapper">
     {% for organisation in listeOrganisations %}
-        <li>{{organisation.name}}</li><a href="/organisation/{{organisation.getId()}}">details</a>
+        <li><h1>{{organisation.name}} <a href="/organisation/{{organisation.getId()}}">details</a></h1></li>
+        ———————
     {% endfor %}
-    <li><a href="/menu">menu</a></li>
+    
 </div>
 {% endblock %}

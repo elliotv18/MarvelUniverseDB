@@ -10,10 +10,11 @@
 
 <div class="example-wrapper">
     {% for hero in listeHeros %}
-        <li>{{hero.pseudo}} </li><a href="/hero/{{hero.getId()}}">details</a>
+        <li><h1>{{hero.pseudo}} <a href="/hero/{{hero.getId()}}">details</a></h1></li>
+        ———————
         
         
     {% endfor %}
-    <li><a href="/menu">menu</a></li>
+    
 </div>
 {% endblock %}
