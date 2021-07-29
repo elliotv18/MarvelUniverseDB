@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 
 class HeroController extends AbstractController
 {
@@ -38,8 +39,8 @@ class HeroController extends AbstractController
         ->add('firstname',TextType::class)
         ->add('name',TextType::class)
         ->add('pseudo',TextType::class)
-        ->add('description',TextType::class)
-        ->add('isEvil', CheckboxType::class)
+        ->add('description',TextareaType::class)
+        ->add('isEvil', CheckboxType::class, ['required'=>false])
         /*->add('picture', FileType::class, ['required'=> false, 'constraints' => [new File(['maxSize' => '1024k','mimeTypes' => ['application/pdf','application/x-pdf',],])]])*/
         ->add('save', SubmitType::class, ['label' => 'Créer Hero'])
             ->getForm();

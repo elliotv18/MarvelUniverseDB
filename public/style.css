@@ -11,8 +11,12 @@ a{
 }
 a:hover{
     color: orange;
-    border-bottom: solid 1px orange;
     
+}
+.nav:hover{
+    color: orange;
+    border-bottom: solid 1px orange;
+    font-size: 21px;
 }
 .menu{
     display: flex;
@@ -48,5 +52,13 @@ input{
     border: solid 1px black;
 }
 input:hover{
+    border:solid 1px orange;
+}
+textarea{
+    font-size: 20px;
+    margin-top: 10px;
+    resize: none;
+}
+textarea:hover{
     border:solid 1px orange;
 }
